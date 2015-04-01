@@ -4,10 +4,79 @@
 @import "typography";
 
 /* Basic styling */
+html, body {
+	height: 100%;
+}
+
 body {
   cursor: default;
 }
 
+
+/* Header */
+
+.navbar {
+	border-radius: 0;
+	margin-bottom: 0;
+
+	background-color: white;
+
+	color: $primaryColor;
+
+	a {
+		color: inherit;
+	}
+}
+
+
+/* Home page */
+
+$circleVideoSize: 200px; // temporary since we are using big buck bunny, which is not 1x1
+
+body.home > .cover {
+	height: 100%;
+
+	background-image: url('../images/conference.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	.container {
+		padding-top: 200px;
+
+		color: white;
+		text-align: center;
+
+		h2 {
+			margin-bottom: 50px;
+
+			font-size: 2.5em;
+		}
+
+		.step-preview {
+			@extend .col-sm-4;
+
+			.circle-video {
+				margin: 0 auto;
+
+				border-radius: $circleVideoSize / 2;
+
+				width: $circleVideoSize;
+				height: $circleVideoSize;
+
+				-webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+			}
+
+			video {
+				position: absolute;
+				top: -$circleVideoSize;
+				left: -$circleVideoSize;
+
+				width: $circleVideoSize * 4;
+				height: $circleVideoSize * 4;
+			}
+		}
+	}
+}
 
 /* Footer */
 
