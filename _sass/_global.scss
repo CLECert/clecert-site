@@ -1,0 +1,24 @@
+// Global Site Styles //
+
+@import "global-variables";
+@import "typography";
+
+/* Basic styling */
+body {
+  cursor: default;
+}
+
+
+/* Footer */
+
+footer > .container > section {
+  @extend .col-xs-12;
+
+  text-align: center;
+}
+
+footer {
+  background-color: $secondaryColor;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
