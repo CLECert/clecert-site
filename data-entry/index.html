@@ -21,9 +21,46 @@ step: 2
           <label for="eventEndDate"><i class="fa fa-clock-o"></i> Event End Date</label>
           <input type="datetime" id="eventEndDate" name="eventEndDate" class="form-control" placeholder="Event End Date">
         </div>
-
-        <button type="submit" class="btn btn-large btn-primary">Continue</button>
       </fieldset>
+
+      <fieldset>
+      <legend>Credit Info</legend>
+
+        <div class="form-group">
+          <label for="eventTitle">Amount of credits</label>
+          <input type="text" id="creditAmount" name="creditAmount" class="form-control" placeholder="Enter number of credits to be awarded">
+
+          <div class="radio">
+            <label><input type="radio" name="creditType" id="creditType" name="creditType" value="Ethics"> Ethics</label>
+            <label><input type="radio" name="creditType" id="creditType" name="creditType" value="Substance Abuse"> Substance Abuse</label>
+            <label><input type="radio" name="creditType" id="creditType" name="creditType" value="Other"> Other</label>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="attendees">
+      <legend>Attendees</legend>
+
+        <div class="form-group">
+          <label for="attendee[0]name">Attendee Name</label>
+          <input type="text" id="attendee[0]name" name="attendee[0]name" class="form-control" placeholder="Attendee's Full Name">
+        </div>
+
+        <div class="form-group">
+          <label for="attendee[0]email">Attendee Email</label>
+          <input type="text" id="attendee[0]email" name="attendee[0]email" class="form-control" placeholder="Attendee's Email Address">
+        </div>
+
+        <div class="form-group">
+          <label for="attendee[0]barnumber">Attendee Bar Number</label>
+          <input type="text" id="attendee[0]barnumber" name="attendee[0]barnumber" class="form-control" placeholder="Attendee's Bar Number">
+        </div>
+
+        <a herf class="btn btn-info">+</a>
+        <a href class="btn btn-info">Import CSV</a>
+      </fieldset>
+
+      <button type="submit" class="btn btn-giant btn-info">Continue</button>
     </form>
   </div>
 </section>

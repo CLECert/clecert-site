@@ -1,6 +1,7 @@
 $(function () {
 
   // This is really not the correct way to do this, but it'll do for demo purposes. It'll do.
+  // Will move to SPA soon
 
   var currentStep = $("body > section").data("step");
   var jurisMap = document.getElementById('jurisdiction-map');
@@ -50,5 +51,13 @@ $(function () {
   }
 
   $('input[type="datetime"]').datetimepicker();
+
+  $('input[type="radio"]').change(function() {
+    $(".radio label").removeClass("active");
+
+    if ($(this).is(':checked')) {
+      $(this).parent().addClass("active");
+    }
+  });
 
 });
