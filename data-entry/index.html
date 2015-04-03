@@ -1,0 +1,29 @@
+---
+layout: step
+step: 2
+---
+
+<section data-step="{{ page.step }}">
+  <div class="container">
+    <h2>Enter <span id="juris-name"></span> Event Data</h2>
+
+    <form action="{{ '/export' | prepend: site.baseurl }}" method="get">
+      <fieldset>
+      <legend>Program Info</legend>
+
+        <div class="form-group">
+          <label for="eventTitle">Event Title</label>
+          <input type="text" id="eventTitle" name="eventTitle" class="form-control" placeholder="Event Title">
+
+          <label for="eventStartDate"><i class="fa fa-clock-o"></i> Event Start Date</label>
+          <input type="datetime" id="eventStartDate" name="eventStartDate" class="form-control" placeholder="Event Start Date">
+
+          <label for="eventEndDate"><i class="fa fa-clock-o"></i> Event End Date</label>
+          <input type="datetime" id="eventEndDate" name="eventEndDate" class="form-control" placeholder="Event End Date">
+        </div>
+
+        <button type="submit" class="btn btn-large btn-primary">Continue</button>
+      </fieldset>
+    </form>
+  </div>
+</section>

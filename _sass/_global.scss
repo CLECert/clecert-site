@@ -51,7 +51,7 @@ body.home {
 body.home > .cover {
   height: 100%;
 
-  background-color: darkblue;
+  background-color: $accentColor;
   background-image: url('../images/conference.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -91,6 +91,10 @@ body.home > .cover {
         left: 0;
         width: 2 * $circleVideoSize;
       }
+
+      figcaption {
+        padding-top: 20px;
+      }
     }
   }
 
@@ -121,6 +125,29 @@ body.home > .cover {
 }
 
 
+/* Data Entry */
+
+fieldset {
+  padding: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  border: 1px solid #ddd;
+
+  legend {
+    border: none;
+    width: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 0;
+  }
+
+  input {
+    margin-bottom: 20px;
+  }
+}
+
+
 /* Footer */
 
 footer > .container > section {
@@ -138,4 +165,10 @@ footer {
   padding-bottom: 15px;
 
   background-color: $secondaryColor;
+}
+
+
+/* Bootstrap overrides */
+.btn-primary {
+  background-color: $accentColor;
 }
