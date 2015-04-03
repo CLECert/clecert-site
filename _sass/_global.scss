@@ -29,6 +29,10 @@ header {
 
   a {
     color: inherit;
+
+    &:hover, &:focus {
+      color: $primaryColor;
+    }
   }
 }
 
@@ -161,6 +165,10 @@ fieldset {
 
   .radio label input {
     display: none;
+  }
+
+  &[disabled] .radio label {
+    opacity: 0.6;
   }
 }
 
