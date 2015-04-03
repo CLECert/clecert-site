@@ -91,6 +91,18 @@ body.home > .cover {
         height: $circleVideoSize;
 
         -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+
+        p {
+          position: absolute;
+          font-size: 10em;
+          text-shadow: #555 1px 2px 4px;
+          top: -5%;
+          left: 40%;
+        }
+
+        p.blue {
+          color: $accentColor;
+        }
       }
 
       video {
@@ -123,6 +135,9 @@ body.home > .cover {
   cursor: pointer;
 }
 
+#gmaps {
+  width: 100%;
+}
 
 /* Data Entry */
 
